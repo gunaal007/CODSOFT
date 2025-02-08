@@ -26,12 +26,50 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .expandable-container {
+          width: 300px;
+          height: 100px;
+          margin: 20px auto;
+          background-color: lightgrey;
+          transition: height 0.3s ease;
+          cursor: pointer;
+          overflow: hidden;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 10px;
+      }
+
+      .expandable-container:hover {
+          background-color: rgb(27, 105, 230);
+          color: white;
+      }
+
+      .expanded {
+          height: 400px;
+      }
+      .expanded::after{
+        background-color: azure;
+      }
+
+      .hidden-text {
+          display: none;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+      }
+
+      .expanded .hidden-text {
+          display: block;
+          opacity: 1;
+      }
+  </style>
+    
   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Aban Offshore LTD</a>
+      <a class="navbar-brand" href="index.html">Aban Offshore LTD.</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -62,73 +100,20 @@
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/contactbg.jpg');">
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/Investorbg.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-9 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Contact Us</h1>
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Investor Information</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Investor Information</h1>
           </div>
         </div>
       </div>
     </div>
+    <br><br>
 
-		<section class="ftco-section contact-section ftco-degree-bg">
-      <div class="container">
-        <div class="row d-flex mb-5 contact-info">
-          <div class="col-md-12 mb-4">
-            <h2 class="h4 underline-hover">Contact Information</h2>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4">
-                <h3 class="ftco-heading-2 underline-hover">Headquater - Chennai</h3>
-                <br><br><br>
-                <div class="block-23 mb-3">
-                  <ul>
-                    <div class="icon icon-map-marker"></div><div class="text">Aban Offshore Ltd. Suite 310, Spectrum Building Oud Metha, Dubai, United Arab Emirates. P.O. Box: 333956</div><br><br>
-                    <div class="icon icon-phone"></div><div class="text">+9714 358 4777</div><br><br>
-                    <div class="icon icon-envelope"></div><div class="text">abanoffshore@aban.com</div><br><br>
-                    <div class="icon icon-fax"></div><div class="text">abanoffshore@aban.com</div>
-                  </ul>                                                                                                                               
-                </div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4">
-                <h3 class="ftco-heading-2 underline-hover">Office - Mumbai</h3>
-                <br><br><br>
-                <div class="block-23 mb-3">
-                  <ul>
-                    <div class="icon icon-map-marker"></div><div class="text">Aban Offshore Ltd. Suite 310, Spectrum Building Oud Metha, Dubai, United Arab Emirates. P.O. Box: 333956</div><br><br>
-                    <div class="icon icon-phone"></div><div class="text">+9714 358 4777</div><br><br>
-                    <div class="icon icon-envelope"></div><div class="text">abanoffshore@aban.com</div><br><br>
-                    <div class="icon icon-fax"></div><div class="text">abanoffshore@aban.com</div>
-                  </ul> 
-                </div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4">
-                <h3 class="ftco-heading-2 underline-hover">Office - Dubai</h3>
-                <br><br><br>
-                <div class="block-23 mb-3">
-                  <ul>
-                    <div class="icon icon-map-marker"></div><div class="text">Aban Offshore Ltd. Suite 310, Spectrum Building Oud Metha, Dubai, United Arab Emirates. P.O. Box: 333956</div><br><br>
-                    <div class="icon icon-phone"></div><div class="text">+9714 358 4777</div><br><br>
-                    <div class="icon icon-envelope"></div><div class="text">abanoffshore@aban.com</div><br><br>
-                    <div class="icon icon-fax"></div><div class="text">abanoffshore@aban.com</div>
-                  </ul> 
-                </div>
-              </div>
-            </div>
-          </div><br><br>
-        </div>
-      </div>
-    </section>
+  
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -180,6 +165,7 @@
           </div>
       </div>
     </footer>
+    
   
 
   <!-- loader -->
